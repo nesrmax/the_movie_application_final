@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/rev_img"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/rev_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/rev_img"
+            android:text="@string/thezero"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/rev_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_alignEnd="@+id/rev_txt"
+            android:layout_below="@id/rev_txt"
+            android:text="@string/thezero" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

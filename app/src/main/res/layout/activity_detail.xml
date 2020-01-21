@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#135"
+    android:padding="10dp"
+    tools:context=".Activity_detail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Image_poster_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo" />
+
+        <CheckBox
+            android:id="@+id/favorite_checkbox"
+            style="?android:attr/starStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Image_poster_detail"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/title_detail_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/favorite_checkbox"
+            android:padding="10dp"
+            android:text="@string/title"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/title_detail_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/favorite_checkbox"
+            android:layout_toEndOf="@id/title_detail_1"
+            android:padding="10dp"
+            android:text="@string/thezero"
+            android:textColor="#00f3ff"
+            android:textSize="20sp"
+            android:textStyle="italic"
+
+            />
+
+        <TextView
+            android:id="@+id/release_date_detail_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_detail_1"
+            android:padding="10dp"
+            android:text="@string/release_date"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/release_date_detail_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_detail_1"
+            android:layout_toRightOf="@id/release_date_detail_1"
+            android:padding="10dp"
+            android:text="@string/thezero"
+            android:textColor="#00f3ff"
+            android:textSize="20sp"
+            android:textStyle="italic"
+
+            />
+
+        <TextView
+            android:id="@+id/vote_average_detail_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/release_date_detail_1"
+            android:padding="10dp"
+            android:text="@string/vote_average"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/vote_average_detail_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/release_date_detail_1"
+            android:layout_toRightOf="@id/vote_average_detail_1"
+            android:padding="10dp"
+            android:text="@string/thezero"
+            android:textColor="#0bf4ff"
+            android:textSize="20sp"
+            android:textStyle="italic"
+
+            />
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vote_average_detail_1"
+            android:padding="10dp"
+            android:text="@string/overview"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/overview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/overview"
+            android:padding="5dp"
+            android:text="@string/thezero"
+            android:textColor="#0bf4ff"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/label_tral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overview2"
+            android:layout_centerHorizontal="true"
+            android:text="@string/the_tral"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/label_tral2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_tral"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:text="@string/click"
+            android:textColor="#2fa157"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerView_Trailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_tral2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/label_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RecyclerView_Trailer"
+            android:layout_centerHorizontal="true"
+            android:text="@string/the_rev"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/label_review1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_review"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:text="@string/thezero"
+            android:textColor="#2fa157"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerView_Reviews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/label_review1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</ScrollView>

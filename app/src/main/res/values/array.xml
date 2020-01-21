@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sort_label">
+        <item>@string/popular</item>
+        <item>@string/most_rated</item>
+    </array>
+
+
+    <array name="sort_values">
+        <item>@string/popular_value</item>
+        <item>@string/most_rated_value</item>
+    </array>
+
+
+</resources>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">the_movie_application</string>
+    <string name="action_setting">Setting</string>
+
+    <string name="popular">Popular</string>
+    <string name="most_rated">TopRated</string>
+
+
+    <string name="popular_value" translatable="false">Popular</string>
+    <string name="most_rated_value" translatable="false">TopRated</string>
+
+
+    <string name="sort_way">SortBy</string>
+    <string name="sort_way_key">SortBy</string>
+    <string name="thezero">0000000</string>
+    <string name="title">Title ::</string>
+    <string name="release_date">Release date ::</string>
+    <string name="vote_average">Vote Average ::</string>
+    <string name="todo">TODO</string>
+    <string name="overview">Overview :: </string>
+
+
+
+    <!--__________________________________________________________________________________________________________________________-->
+
+
+
+    <string name="link">http://api.themoviedb.org/3/movie/</string>
+    <string name="click">click to watch</string>
+    <string name="the_tral">THE TRAILERS</string>
+    <string name="the_rev">THE REVIEWS</string>
+    <string name="share">share</string>
+    <string name="favorite_list">Favorite List</string>
+    <string name="put_in_favorite">Put In Favorite</string>
+
+
+</resources>
